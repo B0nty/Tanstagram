@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CB2588B1EB6A9FE00FCDA6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2588A1EB6A9FE00FCDA6A /* AppDelegate.swift */; };
+		1CB2588D1EB6A9FE00FCDA6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2588C1EB6A9FE00FCDA6A /* ViewController.swift */; };
+		1CB258901EB6A9FE00FCDA6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB2588E1EB6A9FE00FCDA6A /* Main.storyboard */; };
+		1CB258921EB6A9FE00FCDA6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB258911EB6A9FE00FCDA6A /* Assets.xcassets */; };
+		1CB258951EB6A9FE00FCDA6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB258931EB6A9FE00FCDA6A /* LaunchScreen.storyboard */; };
+		1CB258A01EB6A9FE00FCDA6A /* TanstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2589F1EB6A9FE00FCDA6A /* TanstagramTests.swift */; };
+		1CB258AB1EB6A9FE00FCDA6A /* TanstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB258AA1EB6A9FE00FCDA6A /* TanstagramUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CB2589C1EB6A9FE00FCDA6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CB2587F1EB6A9FE00FCDA6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CB258861EB6A9FE00FCDA6A;
+			remoteInfo = Tanstagram;
+		};
+		1CB258A71EB6A9FE00FCDA6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CB2587F1EB6A9FE00FCDA6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CB258861EB6A9FE00FCDA6A;
+			remoteInfo = Tanstagram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CB258871EB6A9FE00FCDA6A /* Tanstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tanstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CB2588A1EB6A9FE00FCDA6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CB2588C1EB6A9FE00FCDA6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1CB2588F1EB6A9FE00FCDA6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CB258911EB6A9FE00FCDA6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CB258941EB6A9FE00FCDA6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CB258961EB6A9FE00FCDA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CB2589B1EB6A9FE00FCDA6A /* TanstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TanstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CB2589F1EB6A9FE00FCDA6A /* TanstagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanstagramTests.swift; sourceTree = "<group>"; };
+		1CB258A11EB6A9FE00FCDA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CB258A61EB6A9FE00FCDA6A /* TanstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TanstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CB258AA1EB6A9FE00FCDA6A /* TanstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanstagramUITests.swift; sourceTree = "<group>"; };
+		1CB258AC1EB6A9FE00FCDA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CB258841EB6A9FE00FCDA6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CB258981EB6A9FE00FCDA6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CB258A31EB6A9FE00FCDA6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CB2587E1EB6A9FE00FCDA6A = {
+			isa = PBXGroup;
+			children = (
+				1CB258891EB6A9FE00FCDA6A /* Tanstagram */,
+				1CB2589E1EB6A9FE00FCDA6A /* TanstagramTests */,
+				1CB258A91EB6A9FE00FCDA6A /* TanstagramUITests */,
+				1CB258881EB6A9FE00FCDA6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CB258881EB6A9FE00FCDA6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CB258871EB6A9FE00FCDA6A /* Tanstagram.app */,
+				1CB2589B1EB6A9FE00FCDA6A /* TanstagramTests.xctest */,
+				1CB258A61EB6A9FE00FCDA6A /* TanstagramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CB258891EB6A9FE00FCDA6A /* Tanstagram */ = {
+			isa = PBXGroup;
+			children = (
+				1CB2588A1EB6A9FE00FCDA6A /* AppDelegate.swift */,
+				1CB2588C1EB6A9FE00FCDA6A /* ViewController.swift */,
+				1CB2588E1EB6A9FE00FCDA6A /* Main.storyboard */,
+				1CB258911EB6A9FE00FCDA6A /* Assets.xcassets */,
+				1CB258931EB6A9FE00FCDA6A /* LaunchScreen.storyboard */,
+				1CB258961EB6A9FE00FCDA6A /* Info.plist */,
+			);
+			path = Tanstagram;
+			sourceTree = "<group>";
+		};
+		1CB2589E1EB6A9FE00FCDA6A /* TanstagramTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CB2589F1EB6A9FE00FCDA6A /* TanstagramTests.swift */,
+				1CB258A11EB6A9FE00FCDA6A /* Info.plist */,
+			);
+			path = TanstagramTests;
+			sourceTree = "<group>";
+		};
+		1CB258A91EB6A9FE00FCDA6A /* TanstagramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CB258AA1EB6A9FE00FCDA6A /* TanstagramUITests.swift */,
+				1CB258AC1EB6A9FE00FCDA6A /* Info.plist */,
+			);
+			path = TanstagramUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CB258861EB6A9FE00FCDA6A /* Tanstagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CB258AF1EB6A9FE00FCDA6A /* Build configuration list for PBXNativeTarget "Tanstagram" */;
+			buildPhases = (
+				1CB258831EB6A9FE00FCDA6A /* Sources */,
+				1CB258841EB6A9FE00FCDA6A /* Frameworks */,
+				1CB258851EB6A9FE00FCDA6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tanstagram;
+			productName = Tanstagram;
+			productReference = 1CB258871EB6A9FE00FCDA6A /* Tanstagram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CB2589A1EB6A9FE00FCDA6A /* TanstagramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CB258B21EB6A9FE00FCDA6A /* Build configuration list for PBXNativeTarget "TanstagramTests" */;
+			buildPhases = (
+				1CB258971EB6A9FE00FCDA6A /* Sources */,
+				1CB258981EB6A9FE00FCDA6A /* Frameworks */,
+				1CB258991EB6A9FE00FCDA6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CB2589D1EB6A9FE00FCDA6A /* PBXTargetDependency */,
+			);
+			name = TanstagramTests;
+			productName = TanstagramTests;
+			productReference = 1CB2589B1EB6A9FE00FCDA6A /* TanstagramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CB258A51EB6A9FE00FCDA6A /* TanstagramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CB258B51EB6A9FE00FCDA6A /* Build configuration list for PBXNativeTarget "TanstagramUITests" */;
+			buildPhases = (
+				1CB258A21EB6A9FE00FCDA6A /* Sources */,
+				1CB258A31EB6A9FE00FCDA6A /* Frameworks */,
+				1CB258A41EB6A9FE00FCDA6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CB258A81EB6A9FE00FCDA6A /* PBXTargetDependency */,
+			);
+			name = TanstagramUITests;
+			productName = TanstagramUITests;
+			productReference = 1CB258A61EB6A9FE00FCDA6A /* TanstagramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CB2587F1EB6A9FE00FCDA6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = B0nty;
+				TargetAttributes = {
+					1CB258861EB6A9FE00FCDA6A = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = BB9NBC38G8;
+						ProvisioningStyle = Automatic;
+					};
+					1CB2589A1EB6A9FE00FCDA6A = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = BB9NBC38G8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1CB258861EB6A9FE00FCDA6A;
+					};
+					1CB258A51EB6A9FE00FCDA6A = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = BB9NBC38G8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1CB258861EB6A9FE00FCDA6A;
+					};
+				};
+			};
+			buildConfigurationList = 1CB258821EB6A9FE00FCDA6A /* Build configuration list for PBXProject "Tanstagram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CB2587E1EB6A9FE00FCDA6A;
+			productRefGroup = 1CB258881EB6A9FE00FCDA6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CB258861EB6A9FE00FCDA6A /* Tanstagram */,
+				1CB2589A1EB6A9FE00FCDA6A /* TanstagramTests */,
+				1CB258A51EB6A9FE00FCDA6A /* TanstagramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CB258851EB6A9FE00FCDA6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB258951EB6A9FE00FCDA6A /* LaunchScreen.storyboard in Resources */,
+				1CB258921EB6A9FE00FCDA6A /* Assets.xcassets in Resources */,
+				1CB258901EB6A9FE00FCDA6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CB258991EB6A9FE00FCDA6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CB258A41EB6A9FE00FCDA6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CB258831EB6A9FE00FCDA6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB2588D1EB6A9FE00FCDA6A /* ViewController.swift in Sources */,
+				1CB2588B1EB6A9FE00FCDA6A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CB258971EB6A9FE00FCDA6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB258A01EB6A9FE00FCDA6A /* TanstagramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CB258A21EB6A9FE00FCDA6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB258AB1EB6A9FE00FCDA6A /* TanstagramUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CB2589D1EB6A9FE00FCDA6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CB258861EB6A9FE00FCDA6A /* Tanstagram */;
+			targetProxy = 1CB2589C1EB6A9FE00FCDA6A /* PBXContainerItemProxy */;
+		};
+		1CB258A81EB6A9FE00FCDA6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CB258861EB6A9FE00FCDA6A /* Tanstagram */;
+			targetProxy = 1CB258A71EB6A9FE00FCDA6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CB2588E1EB6A9FE00FCDA6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CB2588F1EB6A9FE00FCDA6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CB258931EB6A9FE00FCDA6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CB258941EB6A9FE00FCDA6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CB258AD1EB6A9FE00FCDA6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CB258AE1EB6A9FE00FCDA6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CB258B01EB6A9FE00FCDA6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BB9NBC38G8;
+				INFOPLIST_FILE = Tanstagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = B0nty.Tanstagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1CB258B11EB6A9FE00FCDA6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BB9NBC38G8;
+				INFOPLIST_FILE = Tanstagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = B0nty.Tanstagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1CB258B31EB6A9FE00FCDA6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BB9NBC38G8;
+				INFOPLIST_FILE = TanstagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = B0nty.TanstagramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tanstagram.app/Tanstagram";
+			};
+			name = Debug;
+		};
+		1CB258B41EB6A9FE00FCDA6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BB9NBC38G8;
+				INFOPLIST_FILE = TanstagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = B0nty.TanstagramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tanstagram.app/Tanstagram";
+			};
+			name = Release;
+		};
+		1CB258B61EB6A9FE00FCDA6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BB9NBC38G8;
+				INFOPLIST_FILE = TanstagramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = B0nty.TanstagramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Tanstagram;
+			};
+			name = Debug;
+		};
+		1CB258B71EB6A9FE00FCDA6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BB9NBC38G8;
+				INFOPLIST_FILE = TanstagramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = B0nty.TanstagramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Tanstagram;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CB258821EB6A9FE00FCDA6A /* Build configuration list for PBXProject "Tanstagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CB258AD1EB6A9FE00FCDA6A /* Debug */,
+				1CB258AE1EB6A9FE00FCDA6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CB258AF1EB6A9FE00FCDA6A /* Build configuration list for PBXNativeTarget "Tanstagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CB258B01EB6A9FE00FCDA6A /* Debug */,
+				1CB258B11EB6A9FE00FCDA6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1CB258B21EB6A9FE00FCDA6A /* Build configuration list for PBXNativeTarget "TanstagramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CB258B31EB6A9FE00FCDA6A /* Debug */,
+				1CB258B41EB6A9FE00FCDA6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1CB258B51EB6A9FE00FCDA6A /* Build configuration list for PBXNativeTarget "TanstagramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CB258B61EB6A9FE00FCDA6A /* Debug */,
+				1CB258B71EB6A9FE00FCDA6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CB2587F1EB6A9FE00FCDA6A /* Project object */;
+}
