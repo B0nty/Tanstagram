@@ -21,6 +21,11 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         
     }
     
+    @IBAction func saveToPhotosTapGesture(_ sender: UITapGestureRecognizer) {
+        renderImage()
+    }
+    
+    
     // MARK: Set Gestures
     
     func pinchGesture(imageView: UIImageView) -> UIPinchGestureRecognizer {
@@ -57,6 +62,30 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         sender.rotation = 0
     }
     
+    // MARK: Rander image
+    
+    func renderImage() {
+        let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
+        let image = renderer.image { (goTo) in
+            view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+        }
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(ViewController.renderComplete), nil)
+    }
+    
+    func renderComplete(_ image: UIImage, didFinishSavingWithError error:Error?, contextInfo:UnsafeRawPointer) {
+        if let error = error {
+            
+            //Error occured
+            
+            let alert = UIAlertController(title: "Somethign went wrong", message: error.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default))
+            present(alert, animated: true)
+        } else {
+            let alert = UIAlertController(title: "Photo Saved!", message: "You image has been saved to your Camera Roll.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default))
+            present(alert, animated: true)
+        }
+    }
     
     // MARK: Create Gestures
     

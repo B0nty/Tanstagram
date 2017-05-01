@@ -29,6 +29,10 @@
                                 <rect key="frame" x="76" y="236" width="79" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smallTriangle2" translatesAutoresizingMaskIntoConstraints="NO" id="Uvn-uR-bCv">
+                                <rect key="frame" x="206" y="207" width="79" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="SbB-HM-zO7">
                                 <rect key="frame" x="136" y="65" width="79" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -45,12 +49,23 @@
                                 <rect key="frame" x="223" y="47" width="79" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smallTriangle2" translatesAutoresizingMaskIntoConstraints="NO" id="Uvn-uR-bCv">
-                                <rect key="frame" x="206" y="207" width="79" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savePhotosButton" translatesAutoresizingMaskIntoConstraints="NO" id="t7W-ej-ktE">
+                                <rect key="frame" x="67" y="613" width="240" height="46"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="SQx-Bd-63w"/>
+                                    <constraint firstAttribute="height" constant="46" id="WYf-Jb-lOY"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lXw-Mx-Fzb" appends="YES" id="dUP-rr-k2f"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t7W-ej-ktE" secondAttribute="bottom" constant="8" id="You-mo-WpP"/>
+                            <constraint firstItem="t7W-ej-ktE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qwT-qn-a8r"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outletCollection property="images" destination="lmC-Dc-eg4" collectionClass="NSMutableArray" id="8O2-Pf-Ac2"/>
@@ -63,6 +78,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="lXw-Mx-Fzb">
+                    <connections>
+                        <action selector="saveToPhotosTapGesture:" destination="BYZ-38-t0r" id="FOg-lW-y9T"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
@@ -72,6 +92,7 @@
         <image name="bigTriangle2" width="331" height="166"/>
         <image name="midTriangle" width="165" height="165"/>
         <image name="parallelogram" width="246" height="83"/>
+        <image name="savePhotosButton" width="346" height="54"/>
         <image name="smallTriangle1" width="164" height="83"/>
         <image name="smallTriangle2" width="41" height="82"/>
         <image name="square" width="164" height="164"/>
