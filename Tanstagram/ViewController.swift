@@ -8,18 +8,68 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UIGestureRecognizerDelegate {
+    
+    
+    @IBOutlet var images: [UIImageView]!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        createGestures()
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: Set Gestures
+    
+    func pinchGesture(imageView: UIImageView) -> UIPinchGestureRecognizer {
+        return UIPinchGestureRecognizer(target: self, action: #selector(ViewController.handlePinch))
     }
-
-
+    
+    
+    func panGesture(imageView: UIImageView) -> UIPanGestureRecognizer {
+        return UIPanGestureRecognizer(target: self, action: #selector(ViewController.handlePan))
+    }
+    
+    func rotationGesture(imageView: UIImageView) -> UIRotationGestureRecognizer {
+        return UIRotationGestureRecognizer(target: self, action: #selector(ViewController.handleRotation))
+    }
+    
+    // MARK: Handle Gestures
+    
+    func handlePinch(sender: UIPinchGestureRecognizer) {
+        sender.view?.transform = (sender.view?.transform)!.scaledBy(x: sender.scale, y: sender.scale)
+        sender.scale = 1
+    }
+    
+    func handlePan(sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: self.view)
+        if let view = sender.view {
+            view.center = CGPoint(x: view.center.x + translation.x, y: view.center.y + translation.y)
+        }
+        
+        sender.setTranslation(CGPoint.zero, in: self.view)
+    }
+    
+    func handleRotation(sender: UIRotationGestureRecognizer) {
+        sender.view?.transform = (sender.view?.transform)!.rotated(by: sender.rotation)
+        sender.rotation = 0
+    }
+    
+    
+    // MARK: Create Gestures
+    
+    func createGestures() {
+        for shape in images {
+            let pinch = pinchGesture(imageView: shape)
+            let pan = panGesture(imageView: shape)
+            let rotation = rotationGesture(imageView: shape)
+            shape.addGestureRecognizer(pinch)
+            shape.addGestureRecognizer(pan)
+            shape.addGestureRecognizer(rotation)
+        }
+    }
+    
 }
 

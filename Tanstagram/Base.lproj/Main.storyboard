@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tanstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bigTriangle1" translatesAutoresizingMaskIntoConstraints="NO" id="Bcn-OI-Vdp">
+                                <rect key="frame" x="67" y="83" width="79" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="midTriangle" translatesAutoresizingMaskIntoConstraints="NO" id="yrt-DS-14r">
+                                <rect key="frame" x="76" y="236" width="79" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="SbB-HM-zO7">
+                                <rect key="frame" x="136" y="65" width="79" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smallTriangle1" translatesAutoresizingMaskIntoConstraints="NO" id="rUC-tz-7Vp">
+                                <rect key="frame" x="71" y="354" width="79" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="parallelogram" translatesAutoresizingMaskIntoConstraints="NO" id="lmC-Dc-eg4">
+                                <rect key="frame" x="227" y="144" width="79" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bigTriangle2" translatesAutoresizingMaskIntoConstraints="NO" id="yvd-Ac-xS1">
+                                <rect key="frame" x="223" y="47" width="79" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smallTriangle2" translatesAutoresizingMaskIntoConstraints="NO" id="Uvn-uR-bCv">
+                                <rect key="frame" x="206" y="207" width="79" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outletCollection property="images" destination="lmC-Dc-eg4" collectionClass="NSMutableArray" id="8O2-Pf-Ac2"/>
+                        <outletCollection property="images" destination="Uvn-uR-bCv" collectionClass="NSMutableArray" id="xDp-fR-q5U"/>
+                        <outletCollection property="images" destination="yvd-Ac-xS1" collectionClass="NSMutableArray" id="dg7-rk-F1y"/>
+                        <outletCollection property="images" destination="SbB-HM-zO7" collectionClass="NSMutableArray" id="arK-jC-iLx"/>
+                        <outletCollection property="images" destination="Bcn-OI-Vdp" collectionClass="NSMutableArray" id="CZ1-Qz-ds9"/>
+                        <outletCollection property="images" destination="yrt-DS-14r" collectionClass="NSMutableArray" id="lgA-Q3-c4x"/>
+                        <outletCollection property="images" destination="rUC-tz-7Vp" collectionClass="NSMutableArray" id="yUf-Aw-Dd0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bigTriangle1" width="165" height="330"/>
+        <image name="bigTriangle2" width="331" height="166"/>
+        <image name="midTriangle" width="165" height="165"/>
+        <image name="parallelogram" width="246" height="83"/>
+        <image name="smallTriangle1" width="164" height="83"/>
+        <image name="smallTriangle2" width="41" height="82"/>
+        <image name="square" width="164" height="164"/>
+    </resources>
 </document>
