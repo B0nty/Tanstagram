@@ -75,7 +75,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     func renderComplete(_ image: UIImage, didFinishSavingWithError error:Error?, contextInfo:UnsafeRawPointer) {
         if let error = error {
             
-      // MARK: Error occured when saveing photos to camera roll
+      // MARK: Error occured when save photos to camera roll
             
             let alert = UIAlertController(title: "Somethign went wrong", message: error.localizedDescription, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default))
